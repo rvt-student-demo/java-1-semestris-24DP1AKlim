@@ -13,5 +13,7 @@ public class Addition {
         Integer b = Integer.valueOf(scanner.nextLine());
 
         System.out.println(a + " + " + b + " = " + (a + b));
+
+        scanner.close();
     }
 }

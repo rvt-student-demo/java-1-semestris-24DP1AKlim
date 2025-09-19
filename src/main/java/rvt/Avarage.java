@@ -16,5 +16,7 @@ public class Avarage {
         Integer c = Integer.valueOf(scanner.nextLine());
 
         System.out.println("The average is " + ((a + b + c) / 3.0));
+
+        scanner.close();
     }
 }

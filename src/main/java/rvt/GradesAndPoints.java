@@ -26,5 +26,7 @@ public class GradesAndPoints {
         } else {
             System.out.println("Grade: incredible!");
         }
+
+        scanner.close();
     }
 }
