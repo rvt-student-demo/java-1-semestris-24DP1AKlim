@@ -10,13 +10,13 @@ public class Detalas {
         final int uzgrieznesPrice = 3;
         final int paplaknesPrice = 1;
 
-        System.out.println("Skruvju skaits?");
+        System.out.print("Skruvju skaits: ");
         Integer skruves = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Uzgrieznu skaits?");
+        System.out.print("Uzgrieznu skaits: ");
         Integer uzgrieznes = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Paplaksnu skaits?");
+        System.out.print("Paplaksnu skaits: ");
         Integer paplaknes = Integer.valueOf(scanner.nextLine());
 
         if (uzgrieznes < skruves && paplaknes < 2 * skruves) {
