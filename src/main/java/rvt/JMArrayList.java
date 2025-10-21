@@ -5,7 +5,18 @@ import java.util.Scanner;
 
 public class JMArrayList {
     public static void main(String[] args) {
-        listSize();
+        ArrayList<String> strings = new ArrayList<>();
+
+        strings.add("First");
+        strings.add("Second");
+        strings.add("Third");
+
+        System.out.println(strings);
+
+        removeLast(strings);
+        removeLast(strings);
+
+        System.out.println(strings);
     }
 
     public static void onlyTheseNumbers() {
@@ -65,5 +76,15 @@ public class JMArrayList {
 
         System.out.print("Search for? ");
         String search = scanner.nextLine();
+
+        if (list.contains(search)) {
+            System.out.println(search + " was found!");
+        } else {
+            System.out.println(search + " was not found!");
+        }
+    }
+
+    public static void removeLast(ArrayList<String> strings) {
+        strings.removeLast();
     }
 }
