@@ -4,30 +4,13 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        PaymentCard paulsCard = new PaymentCard(20);
+        PaymentCard mattsCard = new PaymentCard(30);
 
-        Statistics stats = new Statistics();
-        Statistics statsEven = new Statistics();
-        Statistics statsOdd = new Statistics();
+        paulsCard.eatHeartily();
+        mattsCard.eatAffordably();
 
-        while (true) {
-            int num = scanner.nextInt();
-
-            if (num == -1)
-                break;
-
-            if (num % 2 == 0)
-                statsEven.addNumber(num);
-            else
-                statsOdd.addNumber(num);
-
-            stats.addNumber(num);
-        }
-
-        System.out.println("Sum: " + stats.sum());
-        System.out.println("Sum of even numbers: " + statsEven.sum());
-        System.out.println("Sum of odd numbers: " + statsOdd.sum());
-
-        scanner.close();
+        System.out.println("Paul: " + paulsCard);
+        System.out.println("Matt: " + mattsCard);
     }
 }
