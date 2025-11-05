@@ -28,6 +28,6 @@ public class PaymentCard {
     }
 
     public String toString() {
-        return "The card has a balance of " + balance + "euros";
+        return "The card has a balance of " + balance + " euros";
     }
 }
