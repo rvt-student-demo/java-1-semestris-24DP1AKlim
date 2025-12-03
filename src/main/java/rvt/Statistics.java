@@ -1,7 +1,5 @@
 package rvt;
 
-import java.util.ArrayList;
-
 public class Statistics {
     private int count;
     private int sum;
@@ -24,5 +22,11 @@ public class Statistics {
 
     public double average() {
         return (double) sum / count;
+    }
+
+    public String toString() {
+        return "Count: " + count + "\n" +
+                "Sum: " + sum + "\n" +
+                "Average: " + average();
     }
 }
